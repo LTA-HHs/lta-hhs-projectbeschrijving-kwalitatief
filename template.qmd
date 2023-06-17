@@ -44,8 +44,8 @@ bibliography: 03_Bibliography/biblio.bib
 csl: 04_Styles/apa.csl
 editor: visual
 
-filters:
-  - _extensions/color-text/color-text.lua
+# filters:
+#  - _extensions/color-text/color-text.lua
 ---
 
 # Inleiding
