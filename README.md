@@ -4,7 +4,7 @@ output: html_document
 date: "2023-06-17"
 ---
 
-## Projectbeschrijving Learning Technology & Analytics
+# Projectbeschrijving Learning Technology & Analytics
 
 Dit template is gemaakt om een projectbeschrijving en -verantwoording te schrijven voor het lectoraat Learning Technology & Analytics van De HHs.
 
