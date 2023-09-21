@@ -1,6 +1,6 @@
 # Projectbeschrijving Learning Technology & Analytics
 
-Dit template is gemaakt om een projectbeschrijving en -verantwoording te schrijven voor het lectoraat Learning Technology & Analytics van De HHs.
+Dit template is gemaakt om een projectbeschrijving en -verantwoording te schrijven voor het lectoraat Learning Technology & Analytics van De HHs voor een kwantitatief onderzoek.
 
 ## Een nieuwe projectbeschrijving maken
 

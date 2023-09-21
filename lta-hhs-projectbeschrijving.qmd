@@ -1,8 +1,8 @@
 ---
 versie: 0.9
 
-subject: Projectbeschrijving [Naam]
-title: [Naam] 
+subject: Projectbeschrijving xxx
+title: xxx 
 subtitle: Projectbeschrijving en -verantwoording, v. {{< meta versie >}}
 author: "Lectoraat Learning Technology & Analytics"
 keywords: [De HHs, De Staat van De Haagse]
@@ -50,7 +50,9 @@ filters:
 
 # Inleiding
 
-**Het project \[Naam\] van het lectoraat Learning Technology & Analytics (LTA) heeft tot doel ....**
+**Het onderzoeksproject \[Naam\] van het lectoraat Learning Technology & Analytics (LTA) heeft tot doel ....**
+
+Het onderzoeksproject wordt uitgevoerd door \[naam + functie + contactgegevens onderzoeker(s)\] en begeleid door de lector, Dr. Theo C. Bakker ([t.c.bakker\@hhs.nl](mailto:t.c.bakker@hhs.nl)).
 
 ## Wat hebben opleidingen en studenten aan dit onderzoeksproject?
 
@@ -70,7 +72,7 @@ Het onderzoek valt verder in de onderzoekslijn Transformative Technology van het
 
 ## Doel en opbouw van dit document
 
-Dit document beschrijft de verdere onderbouwing van het belang van het project (hoofdstuk 2), de operationalisering en onderzoeksvragen van het project (hoofdstuk 3), de bronnen die we daarvoor gebruiken (hoofdstuk 4), het proces voor levering en bewerking (hoofdstuk 5), de methoden van analyse (hoofdstuk 6), de verwachte resultaten (hoofdstuk 7) en de reproduceerbaarheid van het onderzoek (hoofdstuk 8).
+Dit document beschrijft de verdere onderbouwing van het belang van het project (hoofdstuk 2), de operationalisering en onderzoeksvragen van het project (hoofdstuk 3), de bronnen die we daarvoor gebruiken (hoofdstuk 4), het proces voor levering en bewerking (hoofdstuk 5), de methoden van analyse (hoofdstuk 6), de planning (hoofdstuk 7), de verwachte resultaten en eventuele beperkingen (hoofdstuk 8), de reproduceerbaarheid van het onderzoek (hoofdstuk 9) en tot slot het budget en financiering (hoofdstuk 10).
 
 \newpage
 
@@ -90,7 +92,11 @@ Vanuit het principe van academische integriteit is dit document opgesteld om tra
 
 \newpage
 
-# Operationalisering van ...
+# Methode
+
+## Onderzoeksvragen en operationalisering
+
+\[Beschrijf de onderzoeksvragen en de operationalisering daarvan.\]
 
 ...
 
@@ -134,23 +140,51 @@ Samenvattend zijn de bronnen en koppelingen als volgt geordend:
 
 # Methoden van analyse
 
-In dit hoofdstuk beschrijven we per benadering van kansengelijkheid de methode van analyse.
+In dit hoofdstuk beschrijven we per onderzoeksvraag van het onderzoek de methode van analyse.
 
 ...
 
 \newpage
 
-# Verwachte resultaten
+# Planning
+
+In dit hoofdstuk beschrijven we per onderdeel van het onderzoek de planning van activiteiten en resulterende producten.
+
+\[Deel de planning in met een tabel met de volgende kolommen Datum, Activiteit, Door/met wie, Product\]
+
+...
+
+\newpage
+
+# Verwachte resultaten en beperkingen {data-link="Verwachte resultaten"}
+
+## Resultaten
 
 De resultaten van het onderzoek zullen op de volgende manieren beschikbaar worden gesteld:
 
+\[Beschrijf de resultaten die je verwacht, hoe je die ter beschikking gaat stellen en aan wie\]
+
+...
+
+## Beperkingen
+
+Het onderzoek kent mogelijk de volgende beperkingen:
+
+\[Geef een opsomming van beperkingen en hoe daarmee wordt omgegaan\]
+
 ...
 
 \newpage
 
-# Reproduceerbaarheid
+# Reproduceerbaarheid {data-link="Reproduceerbaarheid"}
 
 Het onderzoek volgt de [FAIR principes](https://www.go-fair.org/fair-principles/) voor reproduceerbaarheid van onderzoeksresultaten: **F**indability (vindbaarheid), **A**ccessability (toegankelijkheid), **I**nteroperability (uitwisselbaarheid), en **R**euse (herbruikbaarheid) van digitale assets. We betrekken dit op broncode, metadata, data en beroepsproducten. ...
+
+\newpage
+
+# Budget en financiering
+
+\[Beschrijf per activiteit de verwachte inzet en hoe deze wordt bekostigd.\]
 
 \newpage
 
@@ -163,7 +197,7 @@ Het onderzoek volgt de [FAIR principes](https://www.go-fair.org/fair-principles/
 
 # Versiegeschiedenis {.unnumbered}
 
--   
+-   \[voor elke versie een regel met de datum, de aanpassing en - indien van toepassing - de verspreiding\]
 
 # Repository {.unnumbered}
 
@@ -177,16 +211,25 @@ De broncode voor dit document kan bewerkt worden via [GitHub](https://github.com
 
 ## A. Dataverzameling
 
++-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Aandachtspunt                                                               | Overwegingen                                                                                                                                                                                                                  |
-|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
++=============================================================================+===============================================================================================================================================================================================================================+
 | **A.1 Informed consent**                                                    | Als er menselijke proefpersonen zijn, hebben deze dan geïnformeerde toestemming gegeven, waarbij de proefpersonen er zelf voor kiezen en een duidelijk begrip hebben van het gegevensgebruik waarvoor ze toestemming geven?   |
++-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                                                             | ...                                                                                                                                                                                                                           |
++-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **A.2 Bias in data verzameling**                                            | Hebben we bronnen van vooringenomenheid overwogen die geïntroduceerd zouden kunnen worden tijdens het verzamelen van gegevens en het ontwerpen van enquêtes en hebben we stappen ondernomen om deze te beperken?              |
++-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                                                             | Zie [Databronnen]. ...                                                                                                                                                                                                        |
++-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **A.3 Beperkte onthulling van** **persoonlijk identificeerbare informatie** | Hebben we manieren overwogen om de blootstelling van persoonlijk identificeerbare informatie (PII) te minimaliseren, bijvoorbeeld door anonimisering of door geen informatie te verzamelen die niet relevant is voor analyse? |
++-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                                                             | ...                                                                                                                                                                                                                           |
++-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **A.4 Mitigatie van downstream bias**                                       | Hebben we manieren overwogen om downstreamresultaten te testen op bevooroordeelde uitkomsten (bijv. het verzamelen van gegevens over beschermde groepsstatus zoals etniciteit of geslacht)?                                   |
++-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                                                             | ...                                                                                                                                                                                                                           |
++-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 : {tbl-colwidths="\[25,75\]"}
 
@@ -216,50 +259,81 @@ De broncode voor dit document kan bewerkt worden via [GitHub](https://github.com
 
 ## C. Analyse
 
++--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Aandachtspunt                  | Overwegingen                                                                                                                                                                                                                                                                     |
-|--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
++================================+==================================================================================================================================================================================================================================================================================+
 | **C.1 Missende perspectieven** | Hebben we geprobeerd om blinde vlekken in de analyse aan te pakken door samenwerking met relevante belanghebbenden (bijv. het controleren van aannames en het bespreken van implicaties met betrokken gemeenschappen en materiedeskundigen)?                                     |
++--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                | ...                                                                                                                                                                                                                                                                              |
++--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **C.2 Dataset bias**           | Hebben we de gegevens onderzocht op mogelijke bronnen van vooroordelen en stappen ondernomen om deze vooroordelen te verminderen of aan te pakken (bijv. bestendiging van stereotypen, bevestigingsvooroordelen, onevenwichtige klassen of weggelaten beïnvloedende variabelen)? |
++--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                | ...                                                                                                                                                                                                                                                                              |
++--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **C.3 Eerlijke representatie** | Zijn onze visualisaties, samenvattende statistieken en rapporten ontworpen om de onderliggende gegevens eerlijk weer te geven?                                                                                                                                                   |
++--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                | ...                                                                                                                                                                                                                                                                              |
++--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **C.4 Privacy in de analyse**  | Hebben we ervoor gezorgd dat gegevens met PII niet worden gebruikt of weergegeven tenzij dit noodzakelijk is voor de analyse?                                                                                                                                                    |
++--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                | ...                                                                                                                                                                                                                                                                              |
++--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **C.5 Controleerbaarheid**     | Is het proces voor het genereren van de analyse goed gedocumenteerd en reproduceerbaar als we in de toekomst problemen ontdekken?                                                                                                                                                |
-|                                | Ja. Zie hiervoor het hoofdstuk over [Reproduceerbaarheid]                                                                                                                                                                                                                        |
++--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                | Ja. Zie hiervoor het hoofdstuk over [Beperkingen]                                                                                                                                                                                                                                |
++--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 : {tbl-colwidths="\[25,75\]"}
 
 ## D. Modelleren
 
-| Aandachtspunt                      | Overwegingen                                                                                                                                                                                          |
-|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **D.1 Proxy discriminatie**        | Hebben we ervoor gezorgd dat het model niet berust op variabelen of benaderingen voor variabelen die oneerlijk discriminerend zijn?                                                                   |
-|                                    | ...                                                                                                                                                                                                   |
-| **D.2 Eerlijkheid tussen groepen** | Hebben we de modelresultaten getest op eerlijkheid met betrekking tot verschillende getroffen groepen (bijv. getest op ongelijke foutpercentages)?                                                    |
-|                                    | ...                                                                                                                                                                                                   |
-| **D.3 Variabele selectie**         | Hebben we de effecten van het optimaliseren voor onze gedefinieerde variabelen overwogen en hebben we aanvullende variabelen overwogen?                                                               |
-|                                    | ...                                                                                                                                                                                                   |
-| **D.4 Uitlegbaarheid**             | Kunnen we in begrijpelijke termen een beslissing uitleggen die het model heeft genomen in gevallen waarin een rechtvaardiging nodig is?                                                               |
-|                                    | ...                                                                                                                                                                                                   |
-| **D.5 Communicatie over bias**     | Hebben we de tekortkomingen, beperkingen en vooroordelen van het model gecommuniceerd aan relevante belanghebbenden op een manier die algemeen begrepen kan worden?                                   |
-|                                    | De beperkingen van het onderzoek zullen worden meegenomen in de rapportages/artikelen en verschillen vormen waarin we de uitkomsten van het onderzoek zullen bekend maken. Zie [Verwachte resultaten] |
++------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Aandachtspunt                      | Overwegingen                                                                                                                                                                              |
++====================================+===========================================================================================================================================================================================+
+| **D.1 Proxy discriminatie**        | Hebben we ervoor gezorgd dat het model niet berust op variabelen of benaderingen voor variabelen die oneerlijk discriminerend zijn?                                                       |
++------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                    | ...                                                                                                                                                                                       |
++------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **D.2 Eerlijkheid tussen groepen** | Hebben we de modelresultaten getest op eerlijkheid met betrekking tot verschillende getroffen groepen (bijv. getest op ongelijke foutpercentages)?                                        |
++------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                    | ...                                                                                                                                                                                       |
++------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **D.3 Variabele selectie**         | Hebben we de effecten van het optimaliseren voor onze gedefinieerde variabelen overwogen en hebben we aanvullende variabelen overwogen?                                                   |
++------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                    | ...                                                                                                                                                                                       |
++------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **D.4 Uitlegbaarheid**             | Kunnen we in begrijpelijke termen een beslissing uitleggen die het model heeft genomen in gevallen waarin een rechtvaardiging nodig is?                                                   |
++------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                    | ...                                                                                                                                                                                       |
++------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **D.5 Communicatie over bias**     | Hebben we de tekortkomingen, beperkingen en vooroordelen van het model gecommuniceerd aan relevante belanghebbenden op een manier die algemeen begrepen kan worden?                       |
++------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                    | De beperkingen van het onderzoek zullen worden meegenomen in de rapportages/artikelen en verschillen vormen waarin we de uitkomsten van het onderzoek zullen bekend maken. Zie [Planning] |
++------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 : {tbl-colwidths="\[25,75\]"}
 
 ## E. Inzet
 
++-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Aandachtspunt                                 | Overwegingen                                                                                                                                                                                                                                                                                                                                                 |
-|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
++===============================================+==============================================================================================================================================================================================================================================================================================================================================================+
 | **E.1 Monitoring en evaluatie**               | Hoe zijn we van plan het model en de effecten ervan te bewaken nadat het is ingevoerd (bijv. prestatiebewaking, regelmatige controle van steekproefvoorspellingen, menselijke beoordeling van beslissingen die veel op het spel staan, beoordeling van downstreameffecten van fouten of beslissingen met een lage betrouwbaarheid, testen op concept drift)? |
++-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                               | ...                                                                                                                                                                                                                                                                                                                                                          |
++-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **E.2 Het repareren en voorkomen van schade** | Hebben we met onze organisatie een plan van aanpak besproken voor het geval gebruikers schade ondervinden van de resultaten (bijv. hoe evalueert het datascience team deze gevallen en hoe werkt het analyses en modellen bij om schade in de toekomst te voorkomen)?                                                                                        |
++-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                               | ...                                                                                                                                                                                                                                                                                                                                                          |
++-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **E.3 Terugdraaien**                          | Is er een manier om het model in productie uit te schakelen of terug te draaien als dat nodig is?                                                                                                                                                                                                                                                            |
++-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                               | ...                                                                                                                                                                                                                                                                                                                                                          |
++-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **E.4 Onbedoeld gebruik**                     | Hebben we stappen ondernomen om onbedoeld gebruik en misbruik van het model te identificeren en te voorkomen en hebben we een plan om dit te controleren zodra het model is ingevoerd?                                                                                                                                                                       |
++-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                               | Zie het antwoord bij vraag E.2                                                                                                                                                                                                                                                                                                                               |
++-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 : {tbl-colwidths="\[25,75\]"}
 
