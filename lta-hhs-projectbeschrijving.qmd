@@ -5,7 +5,7 @@ subject: Projectbeschrijving xxx
 title: xxx 
 subtitle: Projectbeschrijving en -verantwoording, v. {{< meta versie >}}
 author: "Lectoraat Learning Technology & Analytics"
-keywords: [De HHs, De Staat van De Haagse]
+keywords: [De HHs]
 lang: nl
 date: last-modified
 date-format: "DD-MM-YYYY"
@@ -26,7 +26,7 @@ titlepage-text-color: '223343'
 titlepage-title-color: '223343'
 titlepage-subtitle-color: '9EA700'
 titlepage-footer-color: 'FFFFFF'
-titlepage-background: 01_Backgrounds/LTA-standingman.pdf
+titlepage-background: 01_Backgrounds/LTA-fairness-pionnen.pdf
 
 header-title-color: '9EA700'
 header-date-color: '777777'
@@ -50,7 +50,11 @@ filters:
 
 # Inleiding
 
+## Samenvatting
+
 **Het onderzoeksproject \[Naam\] van het lectoraat Learning Technology & Analytics (LTA) heeft tot doel ....**
+
+\[samenvatting\]
 
 Het onderzoeksproject wordt uitgevoerd door \[naam + functie + contactgegevens onderzoeker(s)\] en begeleid door de lector, Dr. Theo C. Bakker ([t.c.bakker\@hhs.nl](mailto:t.c.bakker@hhs.nl)).
 
@@ -68,11 +72,11 @@ Dit onderzoeksproject draagt bij aan het instellingsplan van De HHs '[Onderzoeke
 
 Het project draagt bij aan de onderzoekslijnen ... van het lectoraat. ...
 
-Het onderzoek valt verder in de onderzoekslijn Transformative Technology van het Kenniscentrum Global & Inclusive Learning en sluit vanwege het snijvlak Machine Learning en gelijke kansen aan bij de onderzoeksthema's Digitale Toekomst en Rechtvaardige Samenleving van De HHs.
+Het onderzoek valt verder in de onderzoekslijn Transformative Technology van het Kenniscentrum Global & Inclusive Learning en sluit aan bij de onderzoeksthema's Digitale Toekomst / Rechtvaardige Samenleving / Duurzaamheid van De HHs \[maak hier een keuze uit\].
 
 ## Doel en opbouw van dit document
 
-Dit document beschrijft de verdere onderbouwing van het belang van het project (hoofdstuk 2), de operationalisering en onderzoeksvragen van het project (hoofdstuk 3), de bronnen die we daarvoor gebruiken (hoofdstuk 4), het proces voor levering en bewerking (hoofdstuk 5), de methoden van analyse (hoofdstuk 6), de planning (hoofdstuk 7), de verwachte resultaten en eventuele beperkingen (hoofdstuk 8), de reproduceerbaarheid van het onderzoek (hoofdstuk 9) en tot slot het budget en financiering (hoofdstuk 10).
+Dit document beschrijft de verdere onderbouwing van het belang van het project (hoofdstuk 2), de operationalisering en onderzoeksvragen van het project (hoofdstuk 3), de bronnen die we daarvoor gebruiken (hoofdstuk 4), het proces van dataverzameling (hoofdstuk 5), de methoden van analyse (hoofdstuk 6), de planning (hoofdstuk 7), de verwachte resultaten en eventuele beperkingen (hoofdstuk 8), de reproduceerbaarheid van het onderzoek (hoofdstuk 9) en tot slot het budget en financiering (hoofdstuk 10).
 
 \newpage
 
@@ -86,7 +90,7 @@ Dit hoofdstuk bevat een theoretische en ethische onderbouwing van het belang van
 
 ## Ethische overwegingen
 
-Vanuit het principe van academische integriteit is dit document opgesteld om transparant te zijn in het onderzoek en verantwoording af te leggen over de verzamelde data en toegepaste methoden. In deze paragraaf lichten we op hoofdlijnen toe welke ethische overwegingen zijn gemaakt. In bijlage 1 is aan de hand van de [deon checklist voor data scientists](https://deon.drivendata.org/) een breed scala aan ethische vragen behandeld.
+Vanuit het principe van academische integriteit is dit document opgesteld om transparant te zijn in het onderzoek en verantwoording af te leggen over de verzamelde data en toegepaste methoden. In deze paragraaf lichten we op hoofdlijnen toe welke ethische overwegingen zijn gemaakt. In bijlage 1 wordt een aantal ethische vragen behandeld.
 
 ...
 
@@ -103,38 +107,6 @@ Vanuit het principe van academische integriteit is dit document opgesteld om tra
 ## Afbakening
 
 Dit onderzoek beperkt zich tot...
-
-\newpage
-
-# Databronnen
-
-...
-
-## Toelichting op bewerkingen per bron
-
-...
-
-### Schematische weergave bronnen en koppelingen
-
-Samenvattend zijn de bronnen en koppelingen als volgt geordend:
-
-...
-
-\newpage
-
-# Proces van levering en bewerking
-
-## Aanvraag aan levering of download
-
-...
-
-## Datamanagement
-
-...
-
-## Bewerking en verrijking
-
-...
 
 \newpage
 
@@ -178,7 +150,7 @@ Het onderzoek kent mogelijk de volgende beperkingen:
 
 # Reproduceerbaarheid {data-link="Reproduceerbaarheid"}
 
-Het onderzoek volgt de [FAIR principes](https://www.go-fair.org/fair-principles/) voor reproduceerbaarheid van onderzoeksresultaten: **F**indability (vindbaarheid), **A**ccessability (toegankelijkheid), **I**nteroperability (uitwisselbaarheid), en **R**euse (herbruikbaarheid) van digitale assets. We betrekken dit op broncode, metadata, data en beroepsproducten. ...
+Het onderzoek volgt de [FAIR principes](https://www.go-fair.org/fair-principles/) voor reproduceerbaarheid van onderzoeksresultaten: **F**indability (vindbaarheid), **A**ccessability (toegankelijkheid), **I**nteroperability (uitwisselbaarheid), en **R**euse (herbruikbaarheid) van digitale assets. We betrekken dit op dataverzameling en beroepsproducten. ...
 
 \newpage
 
@@ -205,136 +177,154 @@ De broncode voor dit document kan bewerkt worden via [GitHub](https://github.com
 
 \newpage
 
-# Bijlage 1 - Data Science Ethics Checklist {.unnumbered}
+# Bijlage 1 - Ethics Checklist voor kwalitatief onderzoek {.unnumbered}
 
-[![](02_Images/deon.png){fig-pos="h" width="130" height="22"}](http://deon.drivendata.org/)
+## A. Denk na
 
-## A. Dataverzameling
+Neem afstand van het project, denk na over het werk dat je gaat doen en de ethische kwesties die zich in alle fasen van het onderzoek kunnen voordoen. Denk na over de specifieke ethische overwegingen rond de door jou gekozen methodologie en de impact die deze hebben op de gegevensverzameling, analyse en je algehele resultaten.
 
-+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Aandachtspunt                                                               | Overwegingen                                                                                                                                                                                                                  |
-+=============================================================================+===============================================================================================================================================================================================================================+
-| **A.1 Informed consent**                                                    | Als er menselijke proefpersonen zijn, hebben deze dan geïnformeerde toestemming gegeven, waarbij de proefpersonen er zelf voor kiezen en een duidelijk begrip hebben van het gegevensgebruik waarvoor ze toestemming geven?   |
-+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                             | ...                                                                                                                                                                                                                           |
-+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **A.2 Bias in data verzameling**                                            | Hebben we bronnen van vooringenomenheid overwogen die geïntroduceerd zouden kunnen worden tijdens het verzamelen van gegevens en het ontwerpen van enquêtes en hebben we stappen ondernomen om deze te beperken?              |
-+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                             | Zie [Databronnen]. ...                                                                                                                                                                                                        |
-+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **A.3 Beperkte onthulling van** **persoonlijk identificeerbare informatie** | Hebben we manieren overwogen om de blootstelling van persoonlijk identificeerbare informatie (PII) te minimaliseren, bijvoorbeeld door anonimisering of door geen informatie te verzamelen die niet relevant is voor analyse? |
-+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                             | ...                                                                                                                                                                                                                           |
-+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **A.4 Mitigatie van downstream bias**                                       | Hebben we manieren overwogen om downstreamresultaten te testen op bevooroordeelde uitkomsten (bijv. het verzamelen van gegevens over beschermde groepsstatus zoals etniciteit of geslacht)?                                   |
-+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                             | ...                                                                                                                                                                                                                           |
-+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Probeer na te denken over eventuele risico's en neem maatregelen om ze te voorkomen. Zowel door gebruik te maken van het advies in onze richtlijnen als door indien nodig verdere ondersteuning te zoeken.
+
+## B. Voorkom schade
+
+Deelnemers mogen geen schade ondervinden van deelname aan je onderzoek. Je moet alle mogelijke risico's voor zowel deelnemers als onderzoekers in kaart brengen.
+
+Heb je de nodige ondersteuning voor zowel deelnemers als onderzoekers voorhanden, mochten ze die nodig hebben?
+
++-----------------------+----------------------------------------------------------------------------------------------------------------+
+| Aandachtspunt         | Overwegingen                                                                                                   |
++=======================+================================================================================================================+
+| **B.1 Ondersteuning** | Heb je de nodige ondersteuning voor zowel deelnemers als onderzoekers voorhanden, mochten ze die nodig hebben? |
++-----------------------+----------------------------------------------------------------------------------------------------------------+
+|                       | ...                                                                                                            |
++-----------------------+----------------------------------------------------------------------------------------------------------------+
 
 : {tbl-colwidths="\[25,75\]"}
 
-## B. Data-opslag
+## C. Methode en kwaliteit
 
-+-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Aandachtspunt                           | Overwegingen                                                                                                                                                                                                                                                      |
-+=========================================+===================================================================================================================================================================================================================================================================+
-| **B.1 Data beveiliging**                | Hebben we een plan om gegevens te beschermen en te beveiligen (bijv. encryptie in rust en in transit, toegangscontroles op interne gebruikers en derde partijen, toegangslogs en up-to-date software)?                                                            |
-+-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                         | De gegevens worden opgeslagen conform de richtlijnen van de hogeschoolbibliotheek van De HHs via SURF Research Drive. Eventuele overdracht van data vindt plaatst met behulp van SURF Filesender, waarbij de bewijzen van transacties separaat worden opgeslagen. |
-|                                         |                                                                                                                                                                                                                                                                   |
-|                                         | De code wordt separaat opgeslagen in een private omgeving van github voor leden van de kenniskring van het lectoraat Learning Technology & Analytics.                                                                                                             |
-|                                         |                                                                                                                                                                                                                                                                   |
-|                                         | Het versiebeheer op de sofware (R) vindt plaats via het `renv` package in R.                                                                                                                                                                                      |
-+-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **B.2 Het recht om vergeten te worden** | Hebben we een mechanisme waarmee een persoon kan vragen dat diens persoonlijke gegevens worden verwijderd?                                                                                                                                                        |
-+-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                         | Omdat de data is geanonimiseerd is het niet mogelijk om een student naderhand te verwijderen omdat de student niet geïdentificeerd kan worden.                                                                                                                    |
-+-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **B.3 Data bewaar plan**                | Is er een schema of plan om de gegevens te verwijderen als ze niet langer nodig zijn?                                                                                                                                                                             |
-+-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                         | De data wordt na afloop van het onderzoek en publicatie van de resultaten na 1 jaar gearchiveerd in DARK-store. De HHs heeft deze voorziening nog niet, maar hierover zal het lectoraat in gesprek gaan met de data stewards van de hogeschoolbibliotheek.        |
-+-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-: {tbl-colwidths="\[25,75\]"}
-
-## C. Analyse
-
-+--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Aandachtspunt                  | Overwegingen                                                                                                                                                                                                                                                                     |
-+================================+==================================================================================================================================================================================================================================================================================+
-| **C.1 Missende perspectieven** | Hebben we geprobeerd om blinde vlekken in de analyse aan te pakken door samenwerking met relevante belanghebbenden (bijv. het controleren van aannames en het bespreken van implicaties met betrokken gemeenschappen en materiedeskundigen)?                                     |
-+--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                | ...                                                                                                                                                                                                                                                                              |
-+--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **C.2 Dataset bias**           | Hebben we de gegevens onderzocht op mogelijke bronnen van vooroordelen en stappen ondernomen om deze vooroordelen te verminderen of aan te pakken (bijv. bestendiging van stereotypen, bevestigingsvooroordelen, onevenwichtige klassen of weggelaten beïnvloedende variabelen)? |
-+--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                | ...                                                                                                                                                                                                                                                                              |
-+--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **C.3 Eerlijke representatie** | Zijn onze visualisaties, samenvattende statistieken en rapporten ontworpen om de onderliggende gegevens eerlijk weer te geven?                                                                                                                                                   |
-+--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                | ...                                                                                                                                                                                                                                                                              |
-+--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **C.4 Privacy in de analyse**  | Hebben we ervoor gezorgd dat gegevens met PII niet worden gebruikt of weergegeven tenzij dit noodzakelijk is voor de analyse?                                                                                                                                                    |
-+--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                | ...                                                                                                                                                                                                                                                                              |
-+--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **C.5 Controleerbaarheid**     | Is het proces voor het genereren van de analyse goed gedocumenteerd en reproduceerbaar als we in de toekomst problemen ontdekken?                                                                                                                                                |
-+--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                | Ja. Zie hiervoor het hoofdstuk over [Beperkingen]                                                                                                                                                                                                                                |
-+--------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Aandachtspunt                           | Overwegingen                                                                                                                                              |
++=========================================+===========================================================================================================================================================+
+| **C.1 Beperkingen**                     | Heb je nagedacht over de beperkingen van de gekozen methode en de invloed die dit kan hebben op de gegevensverzameling, analyse en algemene resultaten?   |
++-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                         | ...                                                                                                                                                       |
++-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **C.2 Specifieke ethische kwesties**    | Heb je de specifieke ethische kwesties met betrekking tot je methode overwogen?                                                                           |
++-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                         | ...                                                                                                                                                       |
++-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **C.3 Geschiktheid van de methode**     | Is de methode geschikt voor de deelnemersgroep?                                                                                                           |
++-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                         | ...                                                                                                                                                       |
++-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **C.4 Ervarenheid van de onderzoekers** | Zijn de onderzoekers bedreven in de gekozen methode?                                                                                                      |
++-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                         | ...                                                                                                                                                       |
++-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **C.5 Onderzoeksvragen en methode**     | Heb je een duidelijk gedefinieerde onderzoeksvraag? Is je methode het meest geschikt om deze te beantwoorden?                                             |
++-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                         | ...                                                                                                                                                       |
++-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **C.6 Toegankelijkheid**                | Is je methode van gegevensverzameling toegankelijk voor je deelnemersgroep en weerspiegelt deze de individuele behoeften om deel te nemen?                |
++-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                         | ...                                                                                                                                                       |
++-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **C.7 Vooringenomenheid**               | Heb je rekening gehouden met je eigen vooringenomenheid en hoe je eigen meningen en ervaringen elke fase van het onderzoeksproject kunnen beïnvloeden?    |
++-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                         |                                                                                                                                                           |
++-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 : {tbl-colwidths="\[25,75\]"}
 
-## D. Modelleren
+Vermijd het gebruik van suggestieve vragen bij het verzamelen van gegevens. Leidende vragen kunnen de antwoorden van deelnemers beïnvloeden en uw algemene onderzoeksresultaten beïnvloeden. Het gebruik van een onderwerpsleidraad om discussies te vergemakkelijken kan helpen om het aantal of de waarschijnlijkheid van suggestieve vragen te verminderen.
 
-+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Aandachtspunt                      | Overwegingen                                                                                                                                                                              |
-+====================================+===========================================================================================================================================================================================+
-| **D.1 Proxy discriminatie**        | Hebben we ervoor gezorgd dat het model niet berust op variabelen of benaderingen voor variabelen die oneerlijk discriminerend zijn?                                                       |
-+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                    | ...                                                                                                                                                                                       |
-+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **D.2 Eerlijkheid tussen groepen** | Hebben we de modelresultaten getest op eerlijkheid met betrekking tot verschillende getroffen groepen (bijv. getest op ongelijke foutpercentages)?                                        |
-+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                    | ...                                                                                                                                                                                       |
-+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **D.3 Variabele selectie**         | Hebben we de effecten van het optimaliseren voor onze gedefinieerde variabelen overwogen en hebben we aanvullende variabelen overwogen?                                                   |
-+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                    | ...                                                                                                                                                                                       |
-+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **D.4 Uitlegbaarheid**             | Kunnen we in begrijpelijke termen een beslissing uitleggen die het model heeft genomen in gevallen waarin een rechtvaardiging nodig is?                                                   |
-+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                    | ...                                                                                                                                                                                       |
-+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **D.5 Communicatie over bias**     | Hebben we de tekortkomingen, beperkingen en vooroordelen van het model gecommuniceerd aan relevante belanghebbenden op een manier die algemeen begrepen kan worden?                       |
-+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                    | De beperkingen van het onderzoek zullen worden meegenomen in de rapportages/artikelen en verschillen vormen waarin we de uitkomsten van het onderzoek zullen bekend maken. Zie [Planning] |
-+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+## D. Publiek goed
+
++-------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Aandachtspunt                             | Overwegingen                                                                                                                                                             |
++===========================================+==========================================================================================================================================================================+
+| **D.1 Voordelen versus risico's**         | Denk na over wat je van plan bent te doen met de bevindingen, wegen de voordelen op tegen de risico's?                                                                   |
++-------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                           | ...                                                                                                                                                                      |
++-------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **D.2 Communicatie van voordelen**        | Heb je de voordelen van je onderzoek duidelijk gedocumenteerd?                                                                                                           |
++-------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                           | ...                                                                                                                                                                      |
++-------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **D.3 Representatie van de deelnemers**   | Kun je ervoor zorgen dat je bevindingen de ervaringen en meningen van de deelnemersgroep weerspiegelen?                                                                  |
++-------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                           | ...                                                                                                                                                                      |
++-------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **D.4 Bijdrage aan bestaande wetenschap** | Heb je de nodige literatuuronderzoeken gedaan om er zeker van te zijn dat je onderzoek huidige hiaten heeft geïdentificeerd of bijdraagt aan reeds bestaande informatie? |
++-------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                           | ...                                                                                                                                                                      |
++-------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 : {tbl-colwidths="\[25,75\]"}
 
-## E. Inzet
+## E. Transparentie
 
-+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Aandachtspunt                                 | Overwegingen                                                                                                                                                                                                                                                                                                                                                 |
-+===============================================+==============================================================================================================================================================================================================================================================================================================================================================+
-| **E.1 Monitoring en evaluatie**               | Hoe zijn we van plan het model en de effecten ervan te bewaken nadat het is ingevoerd (bijv. prestatiebewaking, regelmatige controle van steekproefvoorspellingen, menselijke beoordeling van beslissingen die veel op het spel staan, beoordeling van downstreameffecten van fouten of beslissingen met een lage betrouwbaarheid, testen op concept drift)? |
-+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                               | ...                                                                                                                                                                                                                                                                                                                                                          |
-+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **E.2 Het repareren en voorkomen van schade** | Hebben we met onze organisatie een plan van aanpak besproken voor het geval gebruikers schade ondervinden van de resultaten (bijv. hoe evalueert het datascience team deze gevallen en hoe werkt het analyses en modellen bij om schade in de toekomst te voorkomen)?                                                                                        |
-+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                               | ...                                                                                                                                                                                                                                                                                                                                                          |
-+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **E.3 Terugdraaien**                          | Is er een manier om het model in productie uit te schakelen of terug te draaien als dat nodig is?                                                                                                                                                                                                                                                            |
-+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                               | ...                                                                                                                                                                                                                                                                                                                                                          |
-+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **E.4 Onbedoeld gebruik**                     | Hebben we stappen ondernomen om onbedoeld gebruik en misbruik van het model te identificeren en te voorkomen en hebben we een plan om dit te controleren zodra het model is ingevoerd?                                                                                                                                                                       |
-+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                               | Zie het antwoord bij vraag E.2                                                                                                                                                                                                                                                                                                                               |
-+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| Aandachtspunt                                         | Overwegingen                                                                                                  |
++=======================================================+===============================================================================================================+
+| **E.1 Communicatie over het onderzoeksproces**        | Heb je duidelijk gecommuniceerd hoe je de gegevens gaat verzamelen, opslaan, analyseren, gebruiken en delen?  |
++-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+|                                                       | ...                                                                                                           |
++-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| **E.2 Communicatie over deelname**                    | Kan je duidelijk aangeven hoe deelname aan het onderzoek eruitziet?                                           |
++-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+|                                                       | ...                                                                                                           |
++-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+| **E.3 Communicatie over aanbevelingen en resultaten** | Heb je overwogen hoe je publiek het beste met je aanbevelingen en resultaten kan omgaan?                      |
++-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+|                                                       | ...                                                                                                           |
++-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
 
 : {tbl-colwidths="\[25,75\]"}
 
-*Bron*: Data Science Ethics Checklist, gemaakt met [deon](http://deon.drivendata.org) en vertaald door T. Bakker met behulp van Deepl; zie de site van deon voor de [originele Engelse versie](https://deon.drivendata.org/#data-science-ethics-checklist).
+## F. Vertrouwelijkheid en gegevensbeveiliging
+
++------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Aandachtspunt                            | Overwegingen                                                                                                                                                                                                                                                                                                                                                                                                                             |
++==========================================+==========================================================================================================================================================================================================================================================================================================================================================================================================================================+
+| **A.1 Vertrouwelijkheid en anonimiteit** | Heb je overwogen hoe je de vertrouwelijkheid en anonimiteit van deelnemersgegevens te allen tijde zult handhaven?                                                                                                                                                                                                                                                                                                                        |
++------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                          | ...                                                                                                                                                                                                                                                                                                                                                                                                                                      |
++------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **A.2 Waarborging anonimiteit**          | Ben je in staat om de anonimiteit van personen in uw bevindingen te waarborgen, zelfs als persoonlijke identificatiemiddelen zijn verwijderd?                                                                                                                                                                                                                                                                                            |
++------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                          | ...                                                                                                                                                                                                                                                                                                                                                                                                                                      |
++------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **A.3 Locatie**                          | De locatie waar de gegevensverzameling plaatsvindt, kan van invloed zijn op hoe prettig zowel de onderzoeker als de deelnemer zich voelt. Dit kan weer van invloed zijn op de kwaliteit van de verzamelde informatie. Je moet ook overwegen hoe privé de locatie is. Is er iemand anders aanwezig? Is er een kans dat het gesprek wordt afgeluisterd?  \                                                                                 |
++------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                          | ...                                                                                                                                                                                                                                                                                                                                                                                                                                      |
++------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **A.4 Persoonlijke levenssfeer**         | Er kunnen zich situaties voordoen waarin je de vertrouwelijkheid moet verbreken als een deelnemer informatie onthult waardoor je je zorgen maakt over zijn of haar veiligheid of die van iemand anders. Beschik je over de noodzakelijke procedure om de vertrouwelijkheid te verbreken als dat nodig is? Ben je op de hoogte van de relevante instanties voor bescherming van persoonlijke levenssfeer waarmee je contact kunt opnemen? |
++------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                          | ...                                                                                                                                                                                                                                                                                                                                                                                                                                      |
++------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+: {tbl-colwidths="\[25,75\]"}
+
+## G. Wettelijke naleving
+
++-----------------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Aandachtspunt                     | Overwegingen                                                                                                      |
++===================================+===================================================================================================================+
+| **A.1 Wettelijke verplichtingen** | Heb je nagedacht over je wettelijke verplichtingen bij het verzamelen en opslaan van persoonlijke informatie?     |
++-----------------------------------+-------------------------------------------------------------------------------------------------------------------+
+|                                   | ...                                                                                                               |
++-----------------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **A.2 Beschermingsprocedure**     | Beschik je over de juiste beschermingsprocedures voor het geval een deelnemer u iets vertelt dat u moet melden?   |
++-----------------------------------+-------------------------------------------------------------------------------------------------------------------+
+|                                   | ...                                                                                                               |
++-----------------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **A.3 Beperking va informatie**   | Weet u hoeveel informatie u moet verzamelen om uw vraag te kunnen beantwoorden?                                   |
++-----------------------------------+-------------------------------------------------------------------------------------------------------------------+
+|                                   | ...                                                                                                               |
++-----------------------------------+-------------------------------------------------------------------------------------------------------------------+
+
+: {tbl-colwidths="\[25,75\]"}
+
+*Bron*: [Ethical considerations associated with Qualitative Research methods van de UK Statistics Authority](https://uksa.statisticsauthority.gov.uk/publication/ethical-considerations-associated-with-qualitative-research-methods/pages/8/)**.** Vertaald door T. Bakker met behulp van Deepl.
